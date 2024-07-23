@@ -54,3 +54,10 @@ fn read_with_parquet(file: &str) -> Result<()> {
   `arrow::array::AsArray` Trait
 + `ParquetRecordBatchReaderBuilder`: `build()`函数返回一个`ParquetRecordBatchReader`
 + `String::from_utf8_lossy()`: 将二进制转换为字符串
+
+## 运行
+
+``` shell
+# `cd parquet_rs_read_parquet`, otherwise, the `sample.parquet` file cannot be found.
+cargo run
+```
