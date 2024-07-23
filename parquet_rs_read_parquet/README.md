@@ -48,12 +48,12 @@ fn read_with_parquet(file: &str) -> Result<()> {
   Ok(())
 }
 ```
-+ `PQ_FILE`: 表示parquet文件的路径，当前我们使用的相对目录，这个目录是运行时的相
+- `PQ_FILE`: 表示parquet文件的路径，当前我们使用的相对目录，这个目录是运行时的相
   对目录，即`cargo run`命令运行时的目录即为**当前目录**
-+ `record_batch.column(0).as_binary::<i32>()`: 这里需要用到
+- `record_batch.column(0).as_binary::<i32>()`: 这里需要用到
   `arrow::array::AsArray` Trait
-+ `ParquetRecordBatchReaderBuilder`: `build()`函数返回一个`ParquetRecordBatchReader`
-+ `String::from_utf8_lossy()`: 将二进制转换为字符串
+- `ParquetRecordBatchReaderBuilder`: `build()`函数返回一个`ParquetRecordBatchReader`
+- `String::from_utf8_lossy()`: 将二进制转换为字符串
 
 ## 运行
 

@@ -1,0 +1,10 @@
+[package]
+name = "datafusion_read_parquet"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.86"
+datafusion = { version = "40.0.0", features = ["serde"] }
+serde = { version = "1.0.204", features = ["derive"] }
+tokio = { version = "1.38.1", features = ["rt", "rt-multi-thread"] }
