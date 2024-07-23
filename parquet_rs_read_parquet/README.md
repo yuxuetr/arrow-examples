@@ -61,3 +61,6 @@ fn read_with_parquet(file: &str) -> Result<()> {
 # `cd parquet_rs_read_parquet`, otherwise, the `sample.parquet` file cannot be found.
 cargo run
 ```
+
+## 链接
+- [博客](https://yuxuetr.com/blog/2024/07/23/rust-parquet)
