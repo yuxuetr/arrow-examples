@@ -1,0 +1,3 @@
+[workspace]
+members = ["parquet_rs_read_parquet"]
+resolver = "2"
